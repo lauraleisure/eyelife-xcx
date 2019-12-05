@@ -1,0 +1,11 @@
+
+<view class="top-container" style="height:{{navTop+capsuleHeight+2}}px">
+  <view class="top-nav flex-box  ai-c" style="top:{{navTop}}px;height:{{capsuleHeight}}px;line-height:{{capsuleHeight}}px">
+    <view class="nav-btn flex-box jc-st ai-c">
+    <view class="icon"><image src="/images/back.svg" /></view>
+    <view class="nav-line"></view>
+    <view class="icon icon-home"><image src="/images/icon-home.svg" /></view>
+    </view>   
+    <view class="nav-title">首页</view>
+  </view>
+</view>

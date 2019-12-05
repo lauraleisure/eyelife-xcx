@@ -1,0 +1,23 @@
+<!--pages/login/login.wxml-->
+
+<view class="page" wx:if="{{!loading}}">
+  <!-- <app-nav pageKey="login" showNav="{{false}}"></app-nav> -->
+ <view class="bg-box">
+      <!-- <view class="homeIcon" bindtap="goHome" style="top:{{navTop}}px;">
+      <image src="/images/home.svg" />
+      </view> -->
+      <view class="msgBox">
+         <view>哈喽，朋友们</view>
+         <view>我们是“西游”机器人</view>
+         <view>准备好跟我们一起畅游西安了吗？</view>
+      </view>    
+     <view class='sub-btn'>
+       <button  class="submit-btn" open-type="getUserInfo" size='default' bindgetuserinfo='tapLogin'>准备好啦</button>
+    </view>
+  </view>
+ 
+</view>
+
+
+
+

@@ -1,0 +1,52 @@
+<!--pages/home/home.wxml-->
+  <app-nav id="app-nav" pageKey="home" bind:updateText="updateText"></app-nav>
+<view class="page" style="padding-top:{{navTop+capsuleHeight}}px">
+  <view class='page-wrapper'>
+    <!-- <view class='search-part'>
+    <input type='text' name="username" placeholder="输入关键字搜索" />
+    </view> -->
+    <view class='swiper'>
+    <swiper autoplay interval="3000" display-multiple-items='1' circular="true" previous-margin='0' next-margin='0' indicator-dots="true" >
+        <swiper-item  class='flex-box jc-s ai-s' wx:for="{{swiperList}}" wx:key="{{item._id}}">       
+          <image mode="widthFix" class='swiper-img' src='{{item.cover_image}}'/>
+          <view class='introduce'> 
+            <view class='txt-title'>{{item.courseName}}</view>
+            <view class='txt-title-small'>{{item.courseBrief}}</view>          
+            <view class='txt-desc'>
+              <view class='desc-title'>课程介绍</view>
+                <view class='desc-content'> {{item.courseIntroduce}}</view>
+            </view>
+          </view>
+        </swiper-item>
+    </swiper>
+    </view>
+    <view class='course-nav flex-box jc-s ai-c'>
+      <view class='nav-item ' bindtap="toList">
+        <view class='item-icon knowledge'><image src='/images/icons/knowledge.png' /></view>
+          <view class='item-title'>知识库</view>
+      </view>
+        <view class='nav-item' bindtap="toVrList">
+        <view class='item-icon vr'><image src='/images/icons/vr.png' /></view>
+          <view class='item-title'>VR课程</view>
+      </view>
+        <view class='nav-item' bindtap="toExam">
+        <view class='item-icon exam'><image src='/images/icons/exam.png' /></view>
+          <view class='item-title'>考试</view>
+      </view>
+    </view>
+    <view class='courseList'>
+      <view class='item-wrapper flex-box jc-s ai-c' wx:for="{{courseList}}" wx:key="{{item._id}}" bindtap="toDetail" data-id="{{item._id}}" data-index="{{index}}">
+        <view class='thumbnail'>
+            <image src='{{item.cover_image}}'/>
+        </view>
+        <view class='course-cont'>
+              <view class='txt-title'>{{item.courseName}}</view>
+              <view class='txt-desc'>{{item.courseIntroduce}}</view>
+        </view>
+      </view>    
+    </view>
+    <view wx:if="{{loadMore}}" class='loadMore' bindtap='getMore'>{{error?error:'加载更多'}}</view>
+      <view wx:if="{{!loadMore}}" class='loadMore'>我是有底线的</view>
+  </view>
+
+</view>

@@ -1,0 +1,116 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  width:100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  color:#333333;
+  background: #f0f0f0;
+}
+
+ page {
+   background: #f0f0f0;
+}
+
+/*半像素上下边线*/
+.halfpxline_after, .halfpxline_before {
+    position: relative;
+}
+
+.halfpxline_after:after, .halfpxline_before:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    z-index: 99;
+    background-color: #ccc;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+}
+
+.halfpxline_after:after {
+    bottom: 0;
+    -webkit-transform-origin: 0 1px;
+    transform-origin: 0 1px;
+}
+
+.halfpxline_before:before {
+    top: 0;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.flex-box{
+ display: flex;
+}
+.jc-st{
+  justify-content: flex-start;
+}
+.jc-s{
+  justify-content: space-between;
+}
+.ai-s{
+  align-items: flex-start;
+}
+.ai-c{
+  align-items: center;
+}
+
+.bg-w{
+  background: #fff;
+}
+.ta-l{
+    text-align: left;
+}
+.ta-c{
+  text-align: center;
+}
+
+.ta-r{
+  text-align: right;
+}
+
+.border-box{
+  box-sizing: border-box;
+}
+
+.fd-c{
+  flex-direction: column;
+}
+
+.btn-wrapper {
+  padding: 32rpx 41rpx;
+}
+.font-green{
+    color: #1aad19;
+}
+.font-theme {
+    color: #771515;
+}
+.font-bold {
+    font-weight: 700;
+}
+
+/*各级字号*/
+.text-lv1 {
+   font-size: 30rpx;
+}
+
+.text-lv2 {
+    font-size: 28rpx;
+}
+
+.text-lv3 {
+    font-size: 26rpx;
+}
+.loadMore{
+  text-align: center;
+  padding: 20rpx;
+  color: #868686;
+}

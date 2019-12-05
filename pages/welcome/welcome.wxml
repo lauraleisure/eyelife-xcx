@@ -1,0 +1,26 @@
+<!--pages/welcome/welcome.wxml-->
+<view class="page" wx:if="{{!loading}}">
+  <!-- <app-nav pageKey="login" showNav="{{false}}"></app-nav> -->
+    <view class="page-wrapper" style="padding-top:{{navTop+capsuleHeight+50}}px">
+      <view class="title-line">
+        <view class="title">您的出行意向</view>
+        <view class="txt-cont">填写信息后，我们将根据您的需求为您推荐出行线路</view>
+      </view>
+      <view class="interest-wrapper">
+         <block wx:for="{{interestList}}" wx:key="{{index}}">
+             <view class="item-wrapper">
+                <view class="txt-title">{{item.title}}</view>
+                <view class="opt-wrapper flex-box jc-c ai-c" >
+                  <block  wx:for="{{item.options}}" wx:for-item="opt" wx:for-index="optIndex" wx:key="optIndex">
+                    <view class="item btn {{opt.selected?'selected':''}}" bindtap="changeSelected" data-key="{{item.key}}" data-optkey="{{opt.key}}">{{opt.desc}}</view>
+                  </block>
+                </view>
+             </view>
+         </block>
+      </view>
+      <view class="btn-wrapper">
+           <view class="txt-cont">别担心，我们将对您的信息严格保密</view>
+           <button class="go btn selected" bindtap="startTravel">开启本次旅程</button>
+      </view>
+    </view>
+</view>

@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/home/home",
+    "pages/turing/turing",
+    "pages/welcome/welcome"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "iconPath": "images/icon-home.png",
+        "selectedIconPath": "images/icon-home-a.png",
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "iconPath": "images/icon-home.png",
+        "selectedIconPath": "images/icon-home-a.png",
+        "pagePath": "pages/home/home",
+        "text": "列表"
+      },
+      {
+        "iconPath": "images/icon-home.png",
+        "selectedIconPath": "images/icon-home-a.png",
+        "pagePath": "pages/turing/turing",
+        "text": "店小二"
+      }
+    ]
+  },
+  "plugins": {
+    "WechatSI": {
+      "version": "0.3.1",
+      "provider": "wx069ba97219f66d99"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}
