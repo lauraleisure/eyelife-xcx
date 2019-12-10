@@ -1,0 +1,23 @@
+{
+  "name": "eyelife-xcx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "vant-weapp": "^0.5.25"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lauraleisure/eyelife-xcx.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lauraleisure/eyelife-xcx/issues"
+  },
+  "homepage": "https://github.com/lauraleisure/eyelife-xcx#readme"
+}
