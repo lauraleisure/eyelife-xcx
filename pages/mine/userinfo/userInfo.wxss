@@ -1,0 +1,39 @@
+/* pages/mine/userinfo/userInfo.wxss */
+.page-wrapper{
+  font-size: 28rpx;
+    color: #333;
+}
+.row{
+  padding: 0 40rpx;
+  line-height: 90rpx;
+  background: #fff;
+}
+/* .phone{
+  color: #565656;
+} */
+.txt-title{
+  color: #868686;
+}
+.txt-cont input{
+   color: #565656;
+}
+.txt-cont text{
+  font-weight: 600;
+}
+.text-input{
+  border:none;
+  outline: none;
+}
+.btn{
+  margin-top: 60rpx;
+}
+.submitBtn{
+  font-size:32rpx;
+   /* height: 80rpx;
+   line-height: 80rpx; */
+   background: rgba(25, 158, 216, 1);
+   color: #fff;
+}
+.username{
+   margin-top: 14rpx;
+  }

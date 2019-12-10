@@ -1,0 +1,7 @@
+{
+ "usingComponents": {
+  "van-search": "vant-weapp/search",
+    "app-nav": "/components/app-nav/app-nav"
+},
+"navigationBarTitleText": "考试成绩"
+}

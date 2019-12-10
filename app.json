@@ -3,7 +3,11 @@
     "pages/login/login",
     "pages/home/home",
     "pages/turing/turing",
-    "pages/welcome/welcome"
+    "pages/welcome/welcome",
+    "pages/mine/myrecord/myRecord",
+    "pages/mine/mytest/myTest",
+    "pages/mine/userinfo/userInfo",
+    "pages/mine/mine"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -13,6 +17,8 @@
     "navigationStyle": "custom"
   },
   "tabBar": {
+    "color": "#333333",
+    "selectedColor": "#04b7df",
     "list": [
       {
         "iconPath": "images/icon-home.png",
@@ -21,16 +27,10 @@
         "text": "首页"
       },
       {
-        "iconPath": "images/icon-home.png",
-        "selectedIconPath": "images/icon-home-a.png",
-        "pagePath": "pages/home/home",
-        "text": "列表"
-      },
-      {
-        "iconPath": "images/icon-home.png",
-        "selectedIconPath": "images/icon-home-a.png",
-        "pagePath": "pages/turing/turing",
-        "text": "店小二"
+        "iconPath": "images/icon-mine.png",
+        "selectedIconPath": "images/icon-mine-a.png",
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
       }
     ]
   },

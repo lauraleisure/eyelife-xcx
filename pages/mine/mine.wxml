@@ -1,0 +1,24 @@
+<!--pages/mine/mine.wxml-->
+<view class='page-wrapper' >
+  <app-nav id="app-nav" pageKey="mine" bind:updateText="updateText"></app-nav>
+  <view class='avatar ' style="padding-top:{{navTop+capsuleHeight}}px">
+   <view class="flex-box jc-s ai-c">
+      <view class='photo'><image src='/images/avatar.png' /></view>
+      <view class='userInfo'>
+        <view class='username'>{{username}}</view>
+        <view>{{signature}}</view>   
+      </view>
+      <view class='settings' bindtap="toUserInfo"></view>
+    </view>
+     <view class='bindingWeChat'>绑定微信</view>
+  </view>
+
+  <view class='myRecord flex-box jc-s ai-c'>
+    <view class='item-wrapper ' bindtap="toLearnRecord">
+       <view class='item-card knowledge'><image mode="widthFix" src='/images/mine-knowledge.png' /></view>    
+    </view>
+      <view class='item-wrapper' bindtap="toExamRecord">
+       <view class='item-card exam'><image mode="widthFix" src='/images/mine-exam.png' /></view>    
+    </view>
+  </view>
+</view>

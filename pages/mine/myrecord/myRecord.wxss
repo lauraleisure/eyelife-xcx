@@ -1,0 +1,52 @@
+/* pages/mine/myrecord/myRecord.wxss */
+page{
+  font-size: 28rpx;
+  background: #ffffff;
+}
+.page-wrapper{
+  padding-top: 100rpx;
+}
+.top-part{
+   width: 100%;
+   box-sizing: border-box;
+   /* padding: 0 20rpx; */
+   position: fixed;
+   top: 0;
+   margin: auto;
+   z-index: 99;
+   background: #fff;
+   /* border: 1px solid #d1d1d1; */
+}
+
+.item-wrapper{  
+  padding:20rpx;
+}
+.thumbnail{
+  width:184rpx;
+  height:127rpx;
+  flex-shrink: 0; 
+}
+.thumbnail image{
+ width: 100%;
+ height: 100%;
+}
+
+/* .courseList .item-wrapper:nth-child(2n) {
+  background: #fff;
+} */
+.course-cont{
+  margin-left: 20rpx;
+}
+.course-cont .txt-title{
+  line-height: 60rpx;
+  font-size:30rpx;
+  font-weight: 700;
+}
+.course-cont .txt-desc{
+  display: -webkit-box;
+ -webkit-box-orient: vertical;
+ -webkit-line-clamp: 2;
+  overflow: hidden;  
+  text-overflow: ellipsis; 
+  color: #a1a1a1;
+}

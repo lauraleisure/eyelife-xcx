@@ -1,0 +1,72 @@
+/* pages/mine/mine.wxss */
+page{
+  background: #ffffff;
+}
+.page-wrapper{
+  font-size: 28rpx;
+}
+.avatar{
+  padding: 20rpx 35rpx;
+  background: #fff url('https://res.51huanche.com/bjaid/mine-bg.png') 0 center no-repeat;
+  background-size: 100% 100%;
+  height: 405rpx;
+}
+ image{
+  width: 100%;
+  height:100%;
+}
+.avatar .photo{
+ width: 100rpx;
+height: 100rpx;
+flex-shrink: 0;
+
+}
+.avatar .username{
+  font-size: 32rpx;
+  font-weight: 700;
+}
+.avatar .userInfo{
+  width: 67%;
+  flex-shrink: 1;
+  margin: 0 20rpx;
+  color: #ffffff;
+}
+.avatar .settings{
+  width: 16rpx;
+  height: 30rpx;
+  flex-shrink: 0;
+ background: url('https://res.51huanche.com/bjaid/settings.png') center no-repeat;
+ background-size: 100% auto;
+
+}
+.bindingWeChat{
+ font-size: 28rpx;
+height: 80rpx;
+line-height: 80rpx;
+color: #ffffff;
+border: 1px solid #ffffff;
+width: 226rpx;
+margin: 90rpx auto 0;
+text-align: center;
+
+}
+.myRecord{
+  padding: 0 30rpx;
+  margin-top: 56rpx;
+}
+.item-wrapper{ 
+  width: 50%;  
+  margin:auto;
+  text-align: center;
+ 
+}
+
+.item-card{
+  width: 320rpx;
+   height:160rpx;
+   margin: auto;
+}
+.item-card image{
+  width: 100%;
+  height: 100%;
+}

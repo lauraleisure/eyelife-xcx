@@ -1,0 +1,25 @@
+<!--pages/mine/mytest/myTest.wxml-->
+ <app-nav id="app-nav" pageKey="mine" bind:updateText="updateText"></app-nav>
+<view class='page-wrapper noScrollDiv'>
+  <view class='top-part halfpxline_after'>
+    <!-- 下拉框 -->
+   <!-- <view class="section-part">  
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{selectData}}">
+        <view class="picker">{{selectData[index]}}</view>
+      </picker>
+    </view>  -->
+    <van-search name="searchName" shape='round'  clearable='true' value="{{searchName}}" placeholder="请输入搜索关键词"  bind:search="onSearch" />
+  </view>
+ <view class='courseList scrollDiv'>
+    <view class='item-wrapper flex-box jc-s ai-c halfpxline_after' wx:for="{{examList}}" wx:key="{{item._id}}"  bindtap="toTest" data-id="{{item._id}}">
+       <view class='thumbnail'>
+          <image src='{{item.cover_image}}'/>
+       </view>
+       <view class='course-cont'>
+            <view class='txt-title'>{{item.courseName}}</view>
+             <view class='txt-desc  toTest'>未通过</view>
+       </view>
+    </view>
+  </view>
+
+</view>

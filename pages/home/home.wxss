@@ -6,13 +6,14 @@ page{
    padding-top: 130rpx;
 } */
 swiper{
-  margin: 0 8rpx;
+  margin: 0rpx;
   background:  rgba(244, 244, 244, 1);
-  min-height: 320rpx;
+  min-height: 360rpx;
 }
 swiper image{
-  width: 65%; 
-   }
+  /* width: 65%;  */
+  width: 100%;
+ }
 .introduce{
   width: 35%;
   flex-shrink: 1;
@@ -23,10 +24,10 @@ swiper .txt-title{
   font-weight: 700;
 }
 swiper .txt-title-small{
-  font-size:26rpx; 
+  font-size:26rpx;
 }
 swiper .txt-desc{
-    font-size:26rpx;  
+    font-size:26rpx;
    margin-top: 16rpx;
 }
 swiper .desc-content{
@@ -34,56 +35,63 @@ swiper .desc-content{
   display: -webkit-box;
  -webkit-box-orient: vertical;
  -webkit-line-clamp: 2;
-  overflow: hidden;  
-  text-overflow: ellipsis; 
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .course-nav{
   background: #fff;
-  height: 160rpx;
+  margin: 10rpx auto;
+  padding: 20rpx 0;
 }
 .course-nav .nav-item{
-  width: 33%;  
+  width: 33%;
   margin: auto;
   text-align: center;
 }
  .nav-item .item-icon{
-   margin: auto;
- 
+   width: 100rpx;
+   height: 100rpx;
+   margin:0 auto 20rpx;
+
   /* border: 1px solid #d1d1d1; */
 }
+ .nav-item .item-title{
+  color:#333333;
+}
 
-.nav-item .item-icon.knowledge{
-  width: 80rpx;
-  height: 80rpx;
-}
-.nav-item .item-icon.vr{
-  width: 70rpx;
-  height: 80rpx;
-}
-.nav-item .item-icon.exam{
-  width: 75rpx;
-  height: 80rpx;
-}
 .item-icon image{
   width: 100%;
   height:100%;
 }
 
-.item-wrapper{  
+.item-wrapper{
   padding:20rpx;
 }
 .thumbnail{
-  width:224rpx;
-  height:150rpx;
-  flex-shrink: 0; 
+  /* width:224rpx;
+  height:150rpx; */
+   width:180rpx;
+  height:125rpx;
+  flex-shrink: 0;
 }
 .thumbnail image{
  width: 100%;
  height: 100%;
 }
-
-.courseList .item-wrapper:nth-child(2n) {
+.courseList{
   background: #fff;
+}
+.courseList .title{
+  padding: 20rpx;
+}
+.courseList .title .icon-title{
+   border-left: 8rpx solid #049fdf;
+   padding: 0 10rpx;
+   color: #313131;
+   font-weight: 800;
+}
+/* .courseList .item-wrapper:nth-child(2n) { }*/
+ .courseList .item-wrapper {
    box-shadow: 0 2rpx 20rpx 0 rgba(180, 180, 180, 0.1);
 }
 
@@ -91,6 +99,7 @@ swiper .desc-content{
   margin-left: 20rpx;
 }
 .course-cont .txt-title{
+  color: #333333;
  line-height: 40rpx;
 font-size: 30rpx;
 font-weight: 700;
@@ -98,10 +107,15 @@ padding: 10rpx 0;
 
 }
 .course-cont .txt-desc{
+  color: #a1a1a1;
   display: -webkit-box;
  -webkit-box-orient: vertical;
  -webkit-line-clamp: 2;
-  overflow: hidden;  
-  text-overflow: ellipsis; 
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
+.tolist{
+  color: #a7a7a7;
+
+}

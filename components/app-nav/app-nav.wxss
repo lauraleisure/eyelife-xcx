@@ -5,13 +5,14 @@
   left: 0;
   right: 0;
   margin: auto;
-  background: #fff;
+  z-index: 99999999;
 }
 .top-nav{
   position: absolute;
   left: 0;
   right: 0;
   margin: auto; 
+
 }
 .icon{
   width: 60rpx;

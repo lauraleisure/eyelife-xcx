@@ -1,0 +1,28 @@
+<!--pages/mine/userinfo/userInfo.wxml-->
+<view class='page-wrapper'>
+    <view class='row flex-box jc-s ai-c halfpxline_after'>
+      <view class="txt-title">昵称</view>
+       <view class="txt-cont"><text>{{nickName}}</text></view>
+    </view>   
+        <view class='row flex-box jc-s ai-c halfpxline_after'>
+      <view class="txt-title">手机</view>
+       <view class="phone txt-cont"><text>{{phone}}</text></view>
+    </view>
+    <form bindsubmit="updateUser">
+     <view class='row username flex-box jc-s ai-c halfpxline_after'>
+      <view class="txt-title">账号</view>
+       <view class="txt-cont"><input class='text-input text-right' type='text' name='username' value='{{username}}' placeholder="请输入账号" /></view>
+    </view>
+     <view class='row flex-box jc-s ai-c halfpxline_after'>
+       <view class="txt-title">修改密码</view>
+       <view class="txt-cont"><input class='text-input text-right' type='password' name='password' placeholder="请输入新密码" /></view>
+    </view>
+     <view class='row flex-box jc-s ai-c halfpxline_after'>
+      <view class="txt-title">确认密码</view>
+       <view class="txt-cont"><input  class='text-input text-right' name='confirmPassword' type='password' placeholder="再次输入新密码"/></view>
+    </view>
+    <view class='row btn'>
+         <button class='submitBtn' formType="submit">提交修改</button>
+    </view>
+    </form>
+</view>

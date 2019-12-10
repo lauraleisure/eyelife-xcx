@@ -27,26 +27,34 @@ Page({
   },
   loadingData: function () {
     var that = this;
-    var swiperList = [{ _id: '001', cover_image: 'https://res.51huanche.com/bjaid/knowledge/0101.jpg', courseName: '北京市卫生健康委员会突发事件紧急医学救援应急预案', courseBrief: '', courseIntroduce: '建立健全应对突发重大自然灾害救助体系和运行机制，规范应急救助行为，提高应急救助能力，最大程度地减少人民群众生命和财产损失，维护灾区社会稳定。' },
-    { _id: '002', cover_image: 'https://res.51huanche.com/bjaid/knowledge/0201.jpg', courseName: '国家自然灾害救助应急预案', courseBrief: '本课程以文档的形式呈现', courseIntroduce: '建立健全应对突发重大自然灾害救助体系和运行机制，规范应急救助行为，提高应急救助能力，最大程度地减少人民群众生命和财产损失，维护灾区社会稳定。' }];
-    var courseList = [{
-      _id: '001', cover_image: 'https://res.51huanche.com/bjaid/knowledge/0101.jpg', thumbnail: 'https://res.51huanche.com/bjaid/knowledge/0101.jpg',
-      courseName: '北京市卫生健康委员会突发事件紧急医学救援应急预案',
-      courseBrief: '本课程以文档的形式呈现',
-      courseIntroduce: '市中医局，市医管局，各区卫生计生委，各相关公共卫生机构，各三级医院：\n' +
-        '为做好各类突发事件紧急医学救援工作，提高卫生应急反应能力和急救水平，我委组织编制了《北京市卫生健康委员会突发事件紧急医学救援应急预案》，现印发给你们，请遵照执行。'
-    },
-    {
-      _id: '002', cover_image: 'https://res.51huanche.com/bjaid/knowledge/0201.jpg', thumbnail: 'https://res.51huanche.com/bjaid/knowledge/0201.jpg',
-      courseName: '国家自然灾害救助应急预案',
-      courseBrief: '本课程以文档的形式呈现',
-      courseIntroduce: '建立健全应对突发重大自然灾害救助体系和运行机制，规范应急救助行为，提高应急救助能力，最大程度地减少人民群众生命和财产损失，维护灾区社会稳定。'
-    },
-    ];
-    var loadMore = true;
-    if (courseList.length < that.data.pagecount) {
-      loadMore = false;
-    }
+      var swiperList = [{ _id: '001', cover_image: 'https://res.51huanche.com/bjaid/knowledge/k1.png'},
+          { _id: '002', cover_image: 'https://res.51huanche.com/bjaid/knowledge/k2.png'},
+          { _id: '003', cover_image: 'https://res.51huanche.com/bjaid/knowledge/k1.png' },
+      ];
+      var courseList = [{
+          _id: '001', cover_image: 'https://res.51huanche.com/bjaid/knowledge/thumb01.png', thumbnail: 'https://res.51huanche.com/bjaid/knowledge/thumb01.png',
+          courseName: '国家自然灾害救助应急预案',
+          courseBrief: '本课程以文档的形式呈现',
+          courseIntroduce: '市中医局，市医管局，各区卫生计生委，各相关公共卫生机构，各三级医院：\n' +
+          '为做好各类突发事件紧急医学救援工作，提高卫生应急反应能力和急救水平，我委组织编制了《北京市卫生健康委员会突发事件紧急医学救援应急预案》，现印发给你们，请遵照执行。'
+      },
+          {
+              _id: '002', cover_image: 'https://res.51huanche.com/bjaid/knowledge/thumb02.png', thumbnail: 'https://res.51huanche.com/bjaid/knowledge/thumb02.png',
+              courseName: '急救VR手册',
+              courseBrief: '本课程以文档的形式呈现',
+              courseIntroduce: '建立健全应对突发重大自然灾害救助体系和运行机制，规范应急救助行为，提高应急救助能力，最大程度地减少人民群众生命和财产损失，维护灾区社会稳定。'
+          },
+          {
+              _id: '003', cover_image: 'https://res.51huanche.com/bjaid/knowledge/thumb03.png', thumbnail: 'https://res.51huanche.com/bjaid/knowledge/thumb03.png',
+              courseName: '国家自然灾害救助应急预案',
+              courseBrief: '本课程以文档的形式呈现',
+              courseIntroduce: '建立健全应对突发重大自然灾害救助体系和运行机制，规范应急救助行为，提高应急救助能力，最大程度地减少人民群众生命和财产损失，维护灾区社会稳定。'
+          },
+      ];
+      var loadMore=true;
+      if (courseList.length <that.data.pagecount){
+          loadMore = false;
+      }
     this.setData({ navTop:App.globalData.navTop,
         capsuleHeight:App.globalData.capsuleHeight,
        swiperList: swiperList, courseList: courseList, loadMore: loadMore });

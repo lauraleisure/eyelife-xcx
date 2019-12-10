@@ -6,6 +6,6 @@
     <view class="nav-line"></view>
     <view class="icon icon-home"><image src="/images/icon-home.svg" /></view>
     </view>   
-    <view class="nav-title">首页</view>
+    <view class="nav-title">{{pageTitle}}</view>
   </view>
 </view>
